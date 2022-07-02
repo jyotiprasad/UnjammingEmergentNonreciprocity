@@ -1,0 +1,21 @@
+#!/bin/bash -l
+#$ -S /bin/bash
+#$ -cwd
+#$ -V
+#$ -N   A.DP_L90
+#$ -pe  orte 256
+#$ -o   result_densfield.out
+#$ -e   error_densfield.out
+
+echo "Starting MPI job at: " `date`
+echo "Starting MPI job on: " `hostname`
+echo "Total cores demanded: " $NSLOTS
+echo "Job name given: " $JOB_NAME
+echo "Job ID: " $JOB_ID
+echo "Starting MPI job..."
+
+mpif90 densvelfield.f90 -o densvelfield.exe 
+
+time mpirun -np $NSLOTS ./densvelfield.exe
+
+exit 0

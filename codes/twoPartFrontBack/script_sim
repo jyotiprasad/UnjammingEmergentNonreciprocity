@@ -1,0 +1,23 @@
+#!/bin/bash -l
+#$ -S /bin/bash
+#$ -cwd
+#$ -V
+#$ -N   d_20.00
+#$ -pe  orte 256
+#$ -o   results.out
+#$ -e   errors.out
+
+echo "Starting MPI job at: " `date`
+echo "Starting MPI job on: " `hostname`
+echo "Total cores demanded: " $NSLOTS
+echo "Job name given: " $JOB_NAME
+echo "Job ID: " $JOB_ID
+echo "Starting MPI job..."
+
+make clean
+make 
+make clean
+
+time mpirun -np $NSLOTS ./result.exe
+
+exit 0
