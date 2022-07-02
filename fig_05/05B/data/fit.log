@@ -1,0 +1,43 @@
+
+
+*******************************************************************************
+Fri Jul  1 17:21:22 2022
+
+
+FIT:    data read from 'x_y_r_dxr_dyr_vx_vy_g2vx_g2vy' u (sqrt($1*$1+$2*$2)>=4 && sqrt($1*$1+$2*$2)<=14 ? $3*$5 : 1/0):7
+        format = x:z
+        #datapoints = 2264
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 0.00560544        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 0.000353472
+
+initial set of free parameter values
+
+m               = -4.5
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 0.0055934
+rel. change during last iteration : -4.19363e-10
+
+degrees of freedom    (FIT_NDF)                        : 2263
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00157216
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.47168e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -4.29374         +/- 0.09348      (2.177%)
+
+
+correlation matrix of the fit parameters:
+
+               m      
+m               1.000 

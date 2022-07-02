@@ -1,0 +1,47 @@
+
+
+*******************************************************************************
+Sat Jul  2 13:01:03 2022
+
+
+FIT:    data read from 'd_10.00_t_dx_dy_errs' u 1:3
+        format = x:z
+        x range restricted to [1000.00 : 2100.00]
+        #datapoints = 1101
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1118.69           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 26.9258
+
+initial set of free parameter values
+
+B               = 3000
+A               = 0.2
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 21.5085
+rel. change during last iteration : -4.84345e-06
+
+degrees of freedom    (FIT_NDF)                        : 1099
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.139896
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.019571
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+B               = 3290.44          +/- 9.063        (0.2754%)
+A               = 0.206191         +/- 0.000546     (0.2648%)
+
+
+correlation matrix of the fit parameters:
+
+               B      A      
+B               1.000 
+A              -0.983  1.000 
